@@ -57,7 +57,7 @@ class Purposes(models.Model):
         return self.title
 
 
-class Dish(models.Model):
+class Dishes(models.Model):
     title = models.CharField(max_length=50, verbose_name='Название')
     description = models.TextField(max_length=300, verbose_name='Описание')
     image = models.ImageField(upload_to='images/', verbose_name='Изображение')
